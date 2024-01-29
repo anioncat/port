@@ -15,6 +15,14 @@ a {
   color: var(--primary);
 }
 
+a:visited {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--tertiary);
+}
+
 h2 {
   color: var(--secondary);
 }
@@ -34,7 +42,7 @@ hr {
   flex-wrap: wrap;
   margin: auto;
   gap: 1em;
-  padding: 0.5em 2em 0.5em 2em;
+  padding: 0.5em 2.5em 0.5em 2.5em;
   background-color: var(--white);
   border-radius: 0.7em;
 }
@@ -48,6 +56,7 @@ hr {
 }
 
 .intro {
+  padding: 0.5em;
   margin: auto;
   width: 50%;
 }
@@ -73,11 +82,18 @@ hr {
 }
 
 .tech {
+  margin-left: 1em;
+  margin-right: 1em;
   width: 100%;
 }
 
 .tech-card {
   width: 20%;
+}
+
+.tech-card-head {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .tech-info {
@@ -87,6 +103,8 @@ hr {
 }
 
 .port {
+  margin-left: 1em;
+  margin-right: 1em;
   width: 100%;
 }
 
@@ -140,9 +158,11 @@ hr {
   justify-content: center;
   align-items: center;
   overflow: clip;
+  border-radius: 0.7em;
 }
 
 .port-img-container > img {
+  border-radius: 0.7em;
   width: 100%;
 }
 
