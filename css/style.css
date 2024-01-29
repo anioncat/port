@@ -1,3 +1,20 @@
+:root {
+  --white: #efeeed;
+  --tertiary: #a7a0cb;
+  --primary: #6473ae;
+  --secondary: #563d75;
+  --black: #262547;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+}
+
+a {
+  color: var(--primary);
+}
+
 .main {
   width: 65%;
   display: flex;
@@ -88,22 +105,15 @@ hr {
 }
 
 .port-tech > ul > li {
-  border: 0.1em solid black;
+  border: 0.1em solid var(--primary);
   border-radius: 0.7em;
   padding: 0.3em;
+  background-color: var(--tertiary);
 }
 
 .port-img {
-  display: inline;
-  text-align: center;
-  min-width: 30em;
-  max-width: 50%;
+  width: 50%;
   height: 100%;
-}
-
-.port-img > img {
-  margin-top: auto;
-  min-height: 80%;
 }
 
 .port-img-container {
