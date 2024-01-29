@@ -61,6 +61,16 @@ hr {
   width: 50%;
 }
 
+.abc {
+  list-style-type: upper-alpha;
+}
+
+.cursor-flash {
+  opacity: 0;
+  animation: fadeInOut 0.5s;
+  animation-iteration-count: infinite;
+}
+
 .contact-panel {
   display: flex;
   flex-direction: row;
