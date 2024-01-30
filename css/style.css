@@ -45,6 +45,7 @@ hr {
 }
 
 .button:hover {
+  color: var(--white);
   background-color: var(--tertiary);
 }
 
