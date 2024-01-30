@@ -149,8 +149,9 @@ hr {
 }
 
 .contact-panel a {
-  display: inline;
-  vertical-align: middle;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .contact-panel a img {
