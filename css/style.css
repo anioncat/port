@@ -78,6 +78,41 @@ hr {
   width: 50%;
 }
 
+.invis-check {
+  display: none;
+}
+
+#A:checked ~ #sb,
+#A:checked ~ #sc {
+  display: none;
+}
+
+#B:checked ~ #sa,
+#B:checked ~ #sc {
+  display: none;
+}
+
+#C:checked ~ #sa,
+#C:checked ~ #sb {
+  display: none;
+}
+
+#A:checked ~ .disappear,
+#B:checked ~ .disappear,
+#C:checked ~ .disappear {
+  display: none;
+}
+
+.appear {
+  display: none;
+}
+
+#A:checked ~ .appear,
+#B:checked ~ .appear,
+#C:checked ~ .appear {
+  display: block;
+}
+
 .quick-links {
   display: flex;
   flex-direction: row;
@@ -86,7 +121,18 @@ hr {
 }
 
 .abc {
-  list-style-type: upper-alpha;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.abc > label > li {
+  padding-left: 40px;
+}
+
+.abc > label:hover {
+  color: var(--tertiary);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .cursor-flash {
