@@ -35,6 +35,23 @@ hr {
   color: var(--black);
 }
 
+.button {
+  border: 0.2em solid var(--secondary);
+  border-radius: 0.7em;
+  padding: 0.5em;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--tertiary);
+}
+
+.button:visited {
+  color: var(--white);
+}
+
 .main {
   width: 65%;
   display: flex;
@@ -59,6 +76,13 @@ hr {
   padding: 0.5em;
   margin: auto;
   width: 50%;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
 }
 
 .abc {
