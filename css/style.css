@@ -70,13 +70,23 @@ hr {
 }
 
 .head {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .intro {
   padding: 0.5em;
   margin: auto;
   width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    width: 100%;
+  }
 }
 
 .invis-check {
@@ -127,7 +137,8 @@ hr {
 }
 
 .abc > label > li {
-  margin-left: 40px;
+  margin-left: 2vw;
+  margin-bottom: 1px;
   padding-left: 0.5em;
   border-left-width: 0.5em;
   border-left-style: solid;
@@ -177,19 +188,25 @@ hr {
   width: 100%;
 }
 
+.tech-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  .tech-info {
+    justify-content: flex-start;
+  }
+}
+
 .tech-card {
-  width: 20%;
+  min-width: 20%;
 }
 
 .tech-card-head {
   font-style: italic;
   text-decoration: underline;
-}
-
-.tech-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .port {
@@ -224,7 +241,7 @@ hr {
 
 .port-tech > ul {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   gap: 1em;
   list-style: none;
   padding-left: 1em;
@@ -254,6 +271,34 @@ hr {
 .port-img-container > img {
   border-radius: 0.7em;
   width: 100%;
+}
+
+@media (width > 600px) {
+  .port-mb {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .port-img {
+    display: none;
+  }
+
+  .port-mb > img {
+    width: 100%;
+  }
+
+  .port-card {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-bottom: 0.2em solid var(--primary);
+    margin-bottom: 0.8em;
+  }
+
+  .port-desc-container {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .spacer {
