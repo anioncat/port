@@ -126,13 +126,21 @@ hr {
 }
 
 .abc > label > li {
-  padding-left: 40px;
+  margin-left: 40px;
+  padding-left: 0.5em;
+  border-left-width: 0.5em;
+  border-left-style: solid;
+  border-left-color: var(--primary);
 }
 
 .abc > label:hover {
   color: var(--tertiary);
   text-decoration: underline;
+}
+
+.abc > label:hover > li {
   cursor: pointer;
+  border-left-color: var(--tertiary);
 }
 
 .cursor-flash {
