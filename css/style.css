@@ -57,7 +57,7 @@ hr {
   width: 65%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
   margin: auto;
   gap: 1em;
   padding: 0.5em 2.5em 0.5em 2.5em;
@@ -81,12 +81,6 @@ hr {
   padding: 0.5em;
   margin: auto;
   width: 50%;
-}
-
-@media screen and (max-width: 600px) {
-  .intro {
-    width: 100%;
-  }
 }
 
 .invis-check {
@@ -196,6 +190,7 @@ hr {
 
 @media screen and (max-width: 600px) {
   .tech-info {
+    flex-direction: column;
     justify-content: flex-start;
   }
 }
@@ -284,12 +279,22 @@ hr {
     display: none;
   }
 
+  .port-mb {
+    width: 100%;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.3em;
+  }
+
   .port-mb > img {
     width: 100%;
   }
 
   .port-card {
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: flex-start;
     border-bottom: 0.2em solid var(--primary);
     margin-bottom: 0.8em;
@@ -299,6 +304,28 @@ hr {
     width: 100%;
     padding: 0;
   }
+
+  .main {
+    width: 80%;
+    padding: 5%;
+  }
+
+  .intro {
+    width: 100%;
+    padding: 0.5em 0 0.5em 0;
+  }
+
+  .tech {
+    width: 100%;
+  }
+
+  .port {
+    width: 100%;
+  }
+
+  .invis-tiny {
+    display: none;
+  }
 }
 
 .spacer {
@@ -306,6 +333,7 @@ hr {
 }
 
 .foot {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
