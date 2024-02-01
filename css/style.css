@@ -4,6 +4,8 @@
   --primary: #6473ae;
   --secondary: #563d75;
   --black: #262547;
+  --font-heading: "Sarabun", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -23,12 +25,18 @@ a:hover {
   color: var(--tertiary);
 }
 
+h1 {
+  font-family: var(--font-heading);
+}
+
 h2 {
   color: var(--secondary);
+  font-family: var(--font-heading);
 }
 
 h3 {
   color: var(--tertiary);
+  font-family: var(--font-heading);
 }
 
 hr {
@@ -230,6 +238,7 @@ hr {
 }
 
 .port-title {
+  font-family: var(--font-heading);
   font-size: larger;
   font-weight: bold;
 }
